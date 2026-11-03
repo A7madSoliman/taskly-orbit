@@ -108,3 +108,45 @@ The owner accepted B09 and merged commit `58bd61f`; D11 remains TODO. [Display C
 [Four-mode verification 159:1332](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=159-1332) contains EN Light 159:1334, AR Light 159:1354, EN Dark 159:1374 and AR Dark 159:1394 as linked 360px utility instances in desktop/mobile examples. Final set and verification renders were inspected; native variable modes, sampled text edits, variant switching and propagation passed. Arabic applied copy wraps; B05 option labels have fixed internal widths, so widths below this specimen require further layout QA. No separate Save, API, default, system-following, persistence or synchronization is implied. DEC-11/12 remain unresolved.
 
 Remaining material final-library QA: B02 Task Card fixed numeric spacing; B09 detached feedback adaptations and their future drift from B03; responsive/focus/keyboard and accessibility behavior beyond static samples; full-library consistency and owner acceptance. Conditional Statistics remains under G-17; no calendar or Statistics behavior was designed. Preserve all DEC/G/F holds.
+
+## B11 — Final library QA — PASS / REVIEW
+
+**B11 PASS; D11 READY FOR OWNER ACCEPTANCE. D11 remains TODO.** Owner approval of the full library and final product design remains outstanding. The [component page 138:112](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=138-112) retains 18 accepted component sets and verification areas. No new family or token was added.
+
+B02 EN/AR Task Card spacing and padding bind to D10 `spacing/8` and `spacing/16`. Four B05 Option Row labels fill available width; linked B10 consumers propagate the change. Temporary 220px EN/AR selected rows stayed within bounds. B09 retains four responsive detached B03 adaptations (158:1197, 158:1203, 158:1209, 158:1215): fill-width text avoids the previously observed nested fixed-width propagation failure. Later B03 master changes will not propagate and require drift review.
+
+### D06/D07 surface coverage
+
+This maps reusable building blocks, not finished screen approval or every state permutation. Unique content is composed during screen design; operation-specific copy, permissions and conditional actions remain governed by D06/D07 evidence.
+
+| Surface | Classification | D11 families / constraint |
+|---|---|---|
+| OR-S01 Sign in | Composition | Text Field, Button, Option Row selection, Shared Feedback, Decision pattern |
+| OR-S02 Sign up | Composition | Text Field, Button, Shared Feedback, Decision pattern |
+| OR-S03 Recovery request | Composition | Text Field, Button, Shared Feedback, Decision pattern |
+| OR-S04 Password reset | Composition | Text Field, Button, Shared Feedback, Decision pattern; eligibility held |
+| OR-S05 Shell and navigation | Composition | Navigation Item, Responsive Drawer, Button, Decision pattern |
+| OR-S06 Projects | Composition | Project Card, Collection Read State, Button, navigation |
+| OR-S07 Create project | Composition | Dialog Shell, Text Field, Button, Shared Feedback, Decision pattern |
+| OR-S08 Project details | Composition | Dialog Shell, Detail Field Editor, Button, Decision pattern |
+| OR-S09 Members | Composition | Member Row, Collection Read State, Button, Shared Feedback |
+| OR-S10 Invite member | Composition | Dialog Shell, Text Field, Button, Shared Feedback, Decision pattern; eligibility held |
+| OR-S11 Invitation landing | Composition | Button, Shared Feedback, Decision pattern; destination and access conditional |
+| OR-S12 Epics | Composition | Epic Row, Text Field, Collection Read State, Button |
+| OR-S13 Create epic | Composition | Dialog Shell, Text Field, selectors, Button, Decision pattern; date policy held |
+| OR-S14 Epic details | Composition | Dialog Shell, Detail Field Editor, Task Card, Collection Read State, Decision pattern; nested ownership |
+| OR-S15 Tasks and Kanban | Composition | Task Card, Status Chip, Collection Read State, Text Field, selectors, Decision pattern; status eligibility held |
+| OR-S16 Create task | Composition | Dialog Shell, Text Field, selectors, Button, Decision pattern |
+| OR-S17 Task details | Composition | Dialog Shell, Detail Field Editor, Status Chip, selectors, Decision pattern |
+| OR-S18 Statistics and calendar | Conditional/deferred | Shared controls and read states support future composition; populated statistics remains conditional under G-17 and calendar-specific presentation is deferred |
+| OR-S19 Display controls | Direct reusable component | Display Controls, linked Option Rows and Button; DEC-11/12 remain held |
+
+No material missing reusable family was identified within bounded D11 scope; this does not establish complete final screens or specialized calendar presentation.
+
+### QA evidence and limits
+
+All 18 sets contain native COMPONENT variants with valid variant definitions and editable text or instance-swap properties where content needs editing; fixed semantic chip and decision states use variants and nested controls. All 508 page instances resolved main components. Each family had D10 color and geometry bindings, linked text styles and Inter/Cairo content; intentional symbol glyphs use Inter. Four B01 roots resolve native Light/Light/Dark/Dark modes. A disposable option-row instance accepted a text edit and switched selected to unselected, then was removed. Card bindings, row FILL, B10 links and B09 responsive frames were independently read back.
+
+Fresh renders inspected: [focus/error and four modes 138:213](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=138-213), [read states 153:1086](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=153-1086), [compact feedback and desktop selector 158:1233](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=158-1233), and [300px rows with long Arabic 154:1203](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=154-1203). No material clipping was seen in these samples. Fresh resolved-variable contrast samples Light/Dark: foreground/surface 13.01/13.66, muted/raised 5.03/7.49, primary label 6.27/8.12, essential border 3.93/4.45, focus 6.27/11.49, error 6.40/7.52, warning 5.39/8.48, success 6.29/8.45.
+
+All 18 accepted set IDs and selected D10/D12 roots resolve; collections retain 61 primitive colors, 43 semantic colors and 15 geometry variables, with 20 text and two effect styles. This is targeted preservation evidence, not a complete historical fingerprint. Static review is not runtime keyboard, focus-trap, screen-reader, persistence or WCAG certification. D12 requires static reduced-motion alternatives and essential information independent of animation. Preserve DEC/G/F holds and G-17. See [B11 report](../../.ai/reports/D11-B11-final-library-qa.md).
