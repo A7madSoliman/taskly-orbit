@@ -1,3 +1,4 @@
+> **Current status, 2026-11-03 (B08):** The owner accepted B07 Collection Read State as a bounded native baseline through the B08 authorization. B08 is REVIEW / bounded static PASS pending owner review; D11 remains TODO until remaining families and full-library acceptance.
 > **Current status, 2026-11-03 (B07):** The owner accepted B06 Dialog Shell and Confirmation Patterns as bounded native baselines through the B07 authorization. B07 is REVIEW; D11 remains TODO pending remaining families and full-library acceptance.
 
 > **Current status, 2026-11-03 (B06):** The owner accepted B05 selectors and option states as a bounded native baseline through the B06 authorization. B06 is REVIEW; D11 remains TODO pending remaining families and full-library acceptance.
@@ -83,3 +84,11 @@ Remaining priorities: collection loading/empty/no-match/retry compositions; memb
 [Four-mode verification 153:1086](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=153-1086) contains Projects and Tasks examples and linked incremental examples. The existing semantic Light/Dark modes, D10 geometry and Inter/Cairo styles are reused. See the B07 report for master and instance IDs and static validation limits.
 
 Remaining priorities: evidenced member/epic rows and detail/editor sections; later language/theme controls and conditional calendar/statistics presentation. Review B02 Task Card fixed numeric spacing during final D11 QA. Preserve all holds and G-17 conditional Statistics. No next batch is authorized by this inventory.
+
+## B08 — Member Row and Epic Row — REVIEW / bounded static PASS
+
+[Member Row set 154:1193](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=154-1193) has EN master 154:1187 and AR master 154:1190, with language-specific editable member name and role text. Use the neutral role-unavailable and name-only fallback where applicable; roster visibility does not establish invitation eligibility. [Epic Row set 154:1202](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=154-1202) has EN master 154:1194 and AR master 154:1198, with editable title and a linked B01 secondary Open epic button. Select a language and edit its matching property; the action opens the selected scoped Epic and does not establish edit or create rights. Do not add unsupported counts or statuses.
+
+[Four-mode verification 154:1203](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=154-1203) contains linked EN/AR Light/Dark instances at 300px, including long Arabic names and titles. D10 semantic color and geometry variables and Inter/Cairo styles are linked. Final master and instance renders, sampled text edits, language switching, resize and master propagation were checked. The static examples do not validate runtime navigation, permissions or accessibility.
+
+Remaining priorities: evidenced detail/editor sections; later language/theme controls and conditional calendar/statistics presentation. Preserve unresolved DEC/G/F holds and G-17 Statistics conditions. Retain the B02 fixed numeric spacing item for final D11 QA. This inventory does not authorize a next batch.
