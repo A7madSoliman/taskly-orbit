@@ -1,0 +1,42 @@
+﻿# Local execution reports
+.ai/reports/
+
+# Secrets and local configuration
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+credentials.json
+service-account*.json
+
+# Dependencies, caches, and build outputs
+node_modules/
+.pnp.*
+.next/
+.nuxt/
+dist/
+build/
+coverage/
+.cache/
+.turbo/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors, operating system, and temporary files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
