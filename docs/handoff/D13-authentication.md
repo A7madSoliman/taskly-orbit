@@ -1,3 +1,11 @@
+# D13-v1 owner acceptance
+
+**D13 is DONE.** The owner accepted D13-v1 after bounded final authentication QA PASS. This current status supersedes the historical B01–B04 review and TODO wording retained below. Accepted scope covers editable Sign In, Sign Up, Password Recovery and Password Reset designs, their evidenced states, responsive desktop/mobile compositions, English LTR and Arabic RTL, Light/Dark modes, linked Orbit Atelier identity and D10/D11 foundations. The exact screen and state links remain in the batch records below. D14–D23 remain TODO.
+
+Final QA reused B01–B04 evidence and inspected representative renders across all four journeys, including 165:1362, 168:281, 166:266, 176:709, 176:1029, 181:275, 181:679, 188:313, 188:520, 188:767, 188:1142 and 168:346. Sampled native roots had valid linked masters, semantic modes, approved EN/AR lockups and D10 bindings. D02 OP-01/02/04/06/25/26 and D06 OR-S01–S04 mappings, guarded exits, qualified acknowledgement and uncertainty are recorded below. Sign In continues only after separately checking destination access; Sign Up, Recovery and Reset offer the evidenced Sign In return. Context-check failure is distinct from invalidity, and uncertain writes are not automatically replayed.
+
+Feedback instances may require local width overrides because the shared masters retain fixed-width internals; Remember choice square glyph overrides must be reapplied after variant switches. Static design QA does not verify runtime keyboard clearance, focus, screen readers, guards, bidi isolation, reduced motion or WCAG certification. Essential information does not depend on motion. DEC-05/06/07/08/11/12 remain unresolved, G-01–G-17 open, F-17–F-20 deferred and Statistics conditional under G-17. This acceptance does not approve the full product design or frontend implementation.
+
 # D13 B01 — Sign In
 
 **D13 B01 PASS / OWNER REVIEW. D13 remains TODO.** This bounded Sign In result awaits owner review and does not approve the full authentication design or frontend implementation.
