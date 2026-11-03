@@ -86,3 +86,10 @@ These rules apply to every Codex Execute task without being repeated in its prom
 - Every meaningful Execute task writes a final `.ai/reports/<task>.md` with: **Task Report, What changed, Files changed, Decisions, Validation, Issues / Risks, Next step**. State actual PASS/PARTIAL, Figma IDs, Git branch/commit/push status, evidence limits and remaining risks.
 - **Mandatory completion step:** run `scripts/copy-report.ps1 <report-path>` (restore the script if missing), then independently compare final file contents to **raw Windows clipboard with exact ordinal equality**. If the report changes afterward, copy and verify again. Never ask the owner to copy it manually.
 - Keep future CLI prompts brief and task-specific; reference **`AGENTS.md`** instead of restating these rules. Report only material blockers, and avoid unnecessary repeated repair loops.
+
+## Brand Identity and RTL/LTR
+
+- Reuse one owner-approved brand lockup consistently; never invent separate logos for individual screens.
+- Preserve the Latin `Taskly Orbit` wordmark in LTR order inside Arabic layouts. Use logical icon/text placement; do not mirror a brand symbol unless its approved meaning is deliberately directional.
+- Validate both languages and Light/Dark themes, desktop/mobile placement, compact sizes, baseline/spacing and long surrounding Arabic content.
+- Owner approval is required before promoting an exploration to the final brand or replacing existing screen branding.
