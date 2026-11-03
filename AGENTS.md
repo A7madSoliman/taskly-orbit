@@ -59,3 +59,30 @@ No credentials, tokens, email addresses, or API secrets in agent reports or comm
 
 ## Reporting
 Use TODO, IN_PROGRESS, BLOCKED, REVIEW, or DONE. During Execute mode, keep dependencies current. Reports in `.ai/reports/` require: Task Report, What changed, Files changed, Decisions, Validation, Issues / Risks, Next step. After finalizing an Execute-mode report, run `scripts/copy-report.ps1 <report-path>` and verify clipboard equality without printing its content. Plan mode remains read-only: present findings and proposed tasks in the conversation without writing reports or updating files.
+
+## Default Execute contract — inherited by all task briefs
+
+These rules apply to every Codex Execute task without being repeated in its prompt. A normal task brief should specify only **objective, bounded scope, exact Figma/source references, feature branch, task-specific checks, and report path**. Explicit owner direction is required to override a gate or expand scope.
+
+### Context and design
+- Read this file first, then the exact backlog entry and only relevant approved handoffs/D02/D06/D07 evidence. Do not re-audit accepted phases or reload unrelated documents.
+- Inspect the exact source Figma nodes and existing components/tokens **before** editing. Preserve approved structures and node IDs where possible; use the selected Concept C, D10 native tokens/styles, D11 reusable components, and D12 bilingual/theme rules as applicable. Figma changes are live and must have exact links recorded in a tracked handoff.
+- Reuse before creating. No invented features, API contracts, permissions, status transitions, locale/date conventions, persistence, or design tokens. Preserve open DEC/G/F holds and conditional Statistics. No delegation, dependencies, frontend or backend work unless expressly authorized for that task.
+
+### Visual and native QA
+- Every meaningful design batch must check **English LTR and Arabic RTL in both Light and Dark** using actual native semantic modes, Inter/Cairo styles, editable layers, linked instances and token bindings. Review relevant desktop and mobile compositions, not an unnecessary full state-by-mode permutation.
+- Validate Arabic alignment and wrapping, mixed-script IDs, original directional-icon exceptions, logical action ordering, and **centered button labels** where the approved button design specifies centering. Supporting prose and field labels follow logical start alignment.
+- For compact forms, check representative **320px, 360px and 390px** widths when relevant; ensure long Arabic content, field/error/focus states, selectable controls (including checked/unchecked Remember choice where present), action text, bottom padding and borders do not clip or conflict.
+- Inspect final **rendered** Figma screenshots after material edits, not only metadata; fix material defects within scope before PASS. Clearly separate static design intent from functioning keyboard, focus, screen-reader, reduced-motion, responsive-runtime or accessibility certification.
+- Validate operation-specific state meaning (loading/empty/failure; pending/rejected/uncertain/qualified), actual origin/return, and guards only where evidenced. Do not replay uncertain writes automatically or claim successful persistence from acknowledgement alone.
+
+### Git, review, and acceptance
+- For authorized meaningful work: inspect the tracked working tree first; preserve uncommitted work; update local `main` via `git pull --ff-only` and use a bounded feature branch. Do not reset, force-push, recreate repositories or rewrite published history.
+- Independently review the actual diff, stage only intended safe files, run `git diff --cached --check`, and check staged paths/content for secrets. Keep `.ai/reports/` local and Git-ignored; track approvals, decisions and Figma links in handoffs/backlog.
+- After a bounded **PASS** and when the task authorizes it, commit and push the feature branch, then verify remote SHA. **Never merge to `main` until the owner accepts that batch.** After approval, fast-forward/merge safely, push `main`, verify SHA, then clean up merged branches. A PARTIAL is not accepted and must not be committed or merged as PASS.
+- Do not start the next task automatically. Only claim tests or validations that actually ran.
+
+### Reports and shorter prompts
+- Every meaningful Execute task writes a final `.ai/reports/<task>.md` with: **Task Report, What changed, Files changed, Decisions, Validation, Issues / Risks, Next step**. State actual PASS/PARTIAL, Figma IDs, Git branch/commit/push status, evidence limits and remaining risks.
+- **Mandatory completion step:** run `scripts/copy-report.ps1 <report-path>` (restore the script if missing), then independently compare final file contents to **raw Windows clipboard with exact ordinal equality**. If the report changes afterward, copy and verify again. Never ask the owner to copy it manually.
+- Keep future CLI prompts brief and task-specific; reference **`AGENTS.md`** instead of restating these rules. Report only material blockers, and avoid unnecessary repeated repair loops.
