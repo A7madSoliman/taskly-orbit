@@ -1,6 +1,6 @@
-﻿# D15 — Members and Invitations
+# D15 — Members and Invitations
 
-Status: TODO. B01 Members Collection: REVIEW (design QA PASS; owner review pending). B02 Invite Member is outside this batch.
+Status: TODO. B01 Members Collection: owner accepted through the B02 authorization and merge to main (commit 2cf8854). B02 Invite Member: REVIEW (bounded design QA PASS; owner review pending).
 
 ## B01 — Members Collection
 
@@ -15,3 +15,13 @@ OR-S09 maps to D02 OP-11 and D06 OR-S09/J-08: the roster is scoped to resolved p
 The eight compositions use D11 linked Member Row, navigation, buttons and Orbit Atelier lockup; roster states use the linked Collection Read State family. D10 native Light/Dark modes and variable bindings are retained; English uses Inter and Arabic uses Cairo with the Latin brand preserved in Inter. The source D11 and D14 nodes were not edited. All eight renders and tablet/320/360/390 specimens were inspected; compact Arabic long names/roles and failure feedback wrap and grow. The compact drawer trigger was corrected after inspection, and desktop Members navigation is active. Native checks found no missing instance masters and no text extending beyond its immediate parent in the checked main and responsive specimens. These are static design checks, not proof of runtime responsiveness, keyboard operation, screen-reader behavior, accessibility certification or actual access rights. Essential information does not depend on animation; reduced motion should suppress nonessential transitions.
 
 Existing DEC/G/F holds remain open, including G-04/G-05 invitation rights and G-15 zero-member reachability. D15 remains TODO pending later batches and owner acceptance.
+
+## B02 — Invite Member
+
+[Figma B02 page 205:242](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=205-242) contains editable desktop EN Light 205:243, AR Light 205:301, EN Dark 205:359, AR Dark 205:417; mobile EN Light 205:475, AR Light 205:520, EN Dark 205:565, AR Dark 205:610. Tablet 207:682, 320 AR validation 207:610, 360 AR validation 207:646 and compact Arabic acknowledgement 207:757 provide responsive specimens. States: focus 206:1666, validation 206:1727, unknown eligibility 206:1787, pending/guarded exit 206:1849, dirty exit 206:1916, rejection 206:1985, conflict 206:2052, uncertainty 206:2119 and qualified acknowledgement 206:2188.
+
+OR-S10 maps to D02 OP-12, D06 OR-S10 and J-08. The entry is conditional on separately established eligibility and preserves the selected project and Members origin. The only input is an email address; local format validation makes no request. Pending prevents duplicate submission and guards exit; leaving does not cancel a submitted request. Definite rejection or supported conflict retains the local draft; uncertain outcome offers review or explicit leave without automatic retry. A 200 acknowledges the request only: it returns no invitation ID and does not establish delivery, acceptance or membership. Pristine Cancel returns to Members; dirty exit offers keep/discard of the local draft. Restore the actual invite trigger or stable roster heading on return, with safe fallback when unavailable. Unknown eligibility is not denial; no role selection, resend, history or inferred rights is introduced.
+
+The desktop compositions use a visible linked D11 Dialog Shell and backdrop over the accepted Members parent. Mobile surfaces cover the viewport below the header. D11 Text Field, Buttons, Shared Feedback and Confirmation / Decision instances, D10 variables/modes and Inter/Cairo are retained; Orbit Atelier remains linked in the parent header. All eight full renders, responsive specimens and representative states were inspected. Arabic validation and acknowledgement feedback wrap at 320px; a feedback overflow and action alignment were corrected before the final renders. Instance master and native-mode checks passed. Original B01 and D11 sources were preserved. This is static design evidence, not runtime keyboard, focus, screen-reader, reduced-motion or permission verification. Intended interaction contains focus in the dialog, returns it safely on close, and makes information available without animation; nonessential motion should be reduced when requested.
+
+B01 acceptance does not close D15. Existing DEC-05/DEC-08/DEC-14 and G-01/G-04/G-05/G-09/G-12/G-13/G-15 holds remain open. Invitation Landing is outside B02.
