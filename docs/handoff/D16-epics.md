@@ -1,6 +1,12 @@
 # D16 — Epics
 
-Status: TODO. B01 Epics Collection: owner accepted through B02 authorization and merge to main (commit 63686e5). B02 Create Epic: owner accepted through B03 authorization and merge to main (commit de0bb0c). B03 Epic Details: REVIEW (bounded design QA PASS; owner review pending).
+Status: DONE. The project owner accepted D16-v1 on 2026-11-04 after bounded final QA PASS. B01 and B02 were accepted through subsequent batch authorizations and merges (63686e5 and de0bb0c); B03 is accepted by this final authorization (1a45d2f). Earlier TODO/REVIEW statements below are historical batch records.
+
+## D16-v1 final acceptance
+
+The owner accepted OR-S12 Epics Collection ([216:1444](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=216-1444)), OR-S13 Create Epic ([224:2](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=224-2)) and OR-S14 Epic Details ([232:19](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=232-19)) as D16-v1. Bounded final review compared the D16 backlog with D02 OP-14–OP-17, OP-11 and OP-20, D06 states/journeys and D07 references, relying on the batch evidence below for the full mode and responsive matrix. It sampled final renders 216:1445, 216:1822, 224:113, 224:587, 232:20, 232:775 and nested desktop 235:1347 across English/Arabic, Light/Dark and desktop/mobile. No Figma changes were made in acceptance.
+
+The accepted designs preserve project scope, conditional eligibility, single-field OP-17 Save/Cancel, independent OP-20 task reads, actual nested parent return and qualified acknowledgement/readback; no uncertain write is automatically replayed. D10 semantic modes and D11 linked instances are supported by the B01–B03 native QA evidence below. Tablet and 320/360/390 specimens and long Arabic feedback remain covered by that batch QA. Date policy and actual permissions remain unresolved; DEC-05/06/07/08/11/12, G-01–G-17 and deferred F-17–F-20 remain held, with Statistics conditional under G-17. This approval is for bounded static design only, not live backend authorization, runtime behavior, accessibility certification or full product/frontend approval. D17–D23 remain TODO.
 
 ## B01 — Epics Collection
 

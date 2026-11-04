@@ -136,7 +136,8 @@ Statuses: TODO, IN_PROGRESS, BLOCKED, REVIEW, DONE. TODO means unstarted, not de
 - Deliverables: Responsive editable screens, states and requirement/API mappings.
 - Dependencies: D-02, D-06, D-07, D-11, D-12, D-14
 - Acceptance criteria: Scope confirmed; actions evidence-backed; all required modes reviewed.
-- Status: TODO
+- Acceptance: D16-v1 owner acceptance on 2026-11-04 after bounded final QA PASS; OR-S12–OR-S14, contract mappings, responsive evidence and limitations are recorded in the [handoff](../../docs/handoff/D16-epics.md). Create/edit eligibility and date policy remain conditional; existing holds remain open. D17–D23 remain TODO.
+- Status: DONE
 
 ### D-17 — Tasks and Kanban
 - Objective: Design task/board workflows confirmed by Discovery.
