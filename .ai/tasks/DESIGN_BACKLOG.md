@@ -120,7 +120,8 @@ Statuses: TODO, IN_PROGRESS, BLOCKED, REVIEW, DONE. TODO means unstarted, not de
 - Deliverables: Responsive editable screens, navigation, states and API mappings.
 - Dependencies: D-02, D-06, D-07, D-11, D-12
 - Acceptance criteria: Scope and permissions verified; mobile/desktop, RTL/LTR and themes reviewed.
-- Status: TODO
+- Acceptance: D14-v1 owner acceptance on 2026-11-04 after bounded final validation PASS; OR-S06–OR-S08, API mappings and limitations are recorded in the [handoff](../../docs/handoff/D14-projects.md). Scope and permission evidence were reviewed; creation/edit rights remain conditional and unverified. Existing holds remain open. D15–D23 remain TODO.
+- Status: DONE
 
 ### D-15 — Members and Invitations
 - Objective: Design approved membership/invitation journeys.
