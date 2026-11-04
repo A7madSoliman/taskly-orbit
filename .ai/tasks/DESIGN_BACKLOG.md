@@ -128,7 +128,8 @@ Statuses: TODO, IN_PROGRESS, BLOCKED, REVIEW, DONE. TODO means unstarted, not de
 - Deliverables: Responsive editable screens, permission states and contract mappings.
 - Dependencies: D-02, D-06, D-07, D-11, D-12, D-14
 - Acceptance criteria: Contract-supported flows only; required modes and role restrictions reviewed.
-- Status: TODO
+- Acceptance: D15-v1 owner acceptance on 2026-11-04 after bounded final QA PASS; OR-S09–OR-S11, API mappings and limitations are recorded in the [handoff](../../docs/handoff/D15-members-invitations.md). Invitation eligibility remains conditional and actual authorization unverified. Existing holds remain open. D16–D23 remain TODO.
+- Status: DONE
 
 ### D-16 — Epics
 - Objective: Design epic workflows if Discovery confirms scope.

@@ -1,6 +1,14 @@
 # D15 — Members and Invitations
 
-Status: TODO. B01 Members Collection: owner accepted through the B02 authorization and merge to main (commit 2cf8854). B02 Invite Member: owner accepted through B03 authorization and merge to main (commit c8885a5). B03 Invitation Landing: REVIEW (bounded design QA PASS; owner review pending).
+Status: DONE — D15-v1 owner accepted on 2026-11-04 after bounded final QA PASS. B01 and B02 were accepted in their subsequent authorizations; B03 is accepted under the D15 final authorization. Historical batch-level TODO and review wording below is superseded by this acceptance.
+
+## D15-v1 acceptance — 2026-11-04
+
+Owner acceptance applies to the bounded design baseline after final QA PASS. [Members 203:99](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=203-99), [Invite Member 205:242](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=205-242), and [Invitation Landing 209:132](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=209-132) remain the editable source of truth. B01–B03 detailed node and state evidence follows below.
+
+Final review reconciled D06 OR-S09–OR-S11 and J-08/J-09 with D02 OP-11/12/13. The roster is project-scoped; a roster read does not establish invitation rights. Invitation and acceptance pending, definite rejection and uncertainty remain distinct, with no automatic replay. OP-12 acknowledgement does not prove delivery or return an invitation ID; OP-13 acknowledgement does not prove membership or access and may return a null project ID. A supplied project reference requires normal context and access checks; otherwise use a safe origin or Projects when applicable. Safe continuation after sign-in depends on available invitation context. No role policy or permission was inferred.
+
+Bounded visual review inspected representative desktop/mobile/tablet, EN/AR, Light/Dark and compact Arabic feedback renders across all three surfaces, including signed-out continuation and both acknowledgement destination cases. Representative native readback confirmed linked component masters and Orbit Atelier, semantic modes, variable bindings and Inter/Cairo. This acceptance is static design approval, not verification of actual authorization, runtime interaction, responsiveness or accessibility certification. Existing DEC-05/06/07/08/11/12, G-01–G-17 and F-17–F-20 holds remain as recorded; DEC-14 safety principles are approved, with detailed application conditional. Statistics remains conditional. D16–D23 remain TODO and full product design approval and the frontend gate remain outstanding.
 
 ## B01 — Members Collection
 
