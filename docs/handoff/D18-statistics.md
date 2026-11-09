@@ -1,6 +1,6 @@
 ﻿# D18 — Statistics & Calendar / B01
 
-Status: REVIEW for D18. B01 structural foundation and B02 bounded dashboard presentation are accepted as batches; explicit D18-v1 final owner design approval is not recorded. Backend-agnostic editable OR-S18 design; audited API mappings below are optional integration examples. G-17 remains unresolved. No production metric definitions, formulas or live API guarantees are approved.
+Status: DONE for D18 design acceptance. The owner explicitly approved D18-v1 complete Statistics & Calendar design acceptance on 2026-11-09, including B01 structural foundation, B02 premium dashboard, Desktop/Tablet/Mobile, EN/AR, Light/Dark and conditional synthetic examples. This approval is design-only. Backend-agnostic editable OR-S18 design; audited API mappings below are optional integration examples. G-17 and all existing DEC/G/F holds remain open for future implementation. No production metric definitions, formulas or live API guarantees are approved.
 
 ## Exact Figma references
 
@@ -77,6 +77,8 @@ B02 QA inspected all eight final desktop/mobile bases, all four tablet modes, 32
 
 ## D18 final design-gate review — 2026-11-09
 
+Historical review decision follows; the explicit owner acceptance below supersedes its REVIEW and missing-approval statements. Prior B01/B02 evidence and exact node references remain unchanged.
+
 Outcome: REVIEW. The owner's D18 FINAL brief explicitly lists B01 (287:2) and B02 (295:443) as accepted batches and requests recording B02 bounded visual acceptance. B02 bounded visual acceptance is therefore recorded from that explicit batch statement, separately from the assistant's prior QA PASS. Neither continuation nor Git merge is treated as D18-v1 approval. No explicit complete D18-v1 owner approval is recorded.
 
 | Design criterion | Existing evidence reviewed | Outcome |
@@ -91,3 +93,11 @@ Outcome: REVIEW. The owner's D18 FINAL brief explicitly lists B01 (287:2) and B0
 This is an evidence reconciliation using existing B01/B02 QA and handoff, without fresh exhaustive visual QA or Figma changes. No additional design defect is identified in that bounded evidence. Runtime accessibility, authorization, aggregation, API compatibility, security and persistence remain separate implementation obligations, not prerequisites for conditional design-only acceptance.
 
 Exact remaining closure decision: the owner must explicitly approve D18-v1 complete Statistics & Calendar design acceptance, comprising the accepted B01 structure and B02 presentation with synthetic examples and all documented G-17/DEC/G/F holds preserved. Until that approval is recorded, keep D18 REVIEW. D19–D23 remain TODO; no next phase is started and the full-product Figma approval gate before frontend implementation remains in force.
+
+## D18-v1 explicit owner acceptance — 2026-11-09
+
+The owner explicitly approved D18-v1 complete Statistics & Calendar design acceptance in the D18 FINAL CLOSURE brief. Accepted scope: B01 structural foundation (page 287:2), B02 premium analytics dashboard (entry 295:443), Desktop/Tablet/Mobile, English LTR/Arabic RTL, Light/Dark and conditional synthetic examples, with the exact compositions and state evidence recorded above. D18 is DONE under the design acceptance gate. This explicit approval resolves the final-review closure decision; it is separate from assistant visual QA and Git merge.
+
+Approval is DESIGN-ONLY. G-17 and all existing DEC/G/F holds remain open for future implementation; synthetic examples do not establish verified aggregation formulas, permissions or API guarantees. Backend authorization/RLS, constraints, API compatibility, transition enforcement, security, persistence and runtime/accessibility behavior require separate validation against the selected backend. The audited Supabase API remains an optional reference for this reusable backend-agnostic design system.
+
+Documentation-only closure used the existing B01/B02 QA and final-review evidence; no Figma edits or repeated visual QA. D19–D23 remain TODO and are not started. D18 acceptance does not grant full-product Figma approval or authorize frontend implementation.
