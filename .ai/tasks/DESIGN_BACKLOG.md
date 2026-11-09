@@ -139,7 +139,7 @@ Statuses: TODO, IN_PROGRESS, BLOCKED, REVIEW, DONE. TODO means unstarted, not de
 - Acceptance: D16-v1 owner acceptance on 2026-11-04 after bounded final QA PASS; OR-S12–OR-S14, contract mappings, responsive evidence and limitations are recorded in the [handoff](../../docs/handoff/D16-epics.md). Create/edit eligibility and date policy remain conditional; existing holds remain open. D17–D23 remain TODO.
 - Status: DONE
 
-Current reconciliation: D-14 through D-19 are DONE under their recorded owner design acceptances; D-20 through D-23 remain TODO. Earlier status summaries above are historical where they conflict with these individual entries.
+Current reconciliation: D-14 through D-19 are DONE under their recorded owner design acceptances; D-20 is REVIEW pending owner design acceptance; D-21 through D-23 remain TODO. Earlier status summaries above are historical where they conflict with these individual entries.
 
 Design acceptance for D-17–D-23 concerns the editable Figma design and documented conditional behavior. Backend authorization, RLS, constraints, API compatibility, transition enforcement, runtime behavior, security and persistence belong to the separate implementation validation gate. DEC-05/DEC-07 and G-04/G-08 remain unresolved integration requirements; this separation does not approve or verify them. Existing phase-specific design criteria remain in force.
 
@@ -174,7 +174,8 @@ Design acceptance for D-17–D-23 concerns the editable Figma design and documen
 - Deliverables: Timings, easing, triggers, interaction specs and reduced-motion alternatives.
 - Dependencies: D-13, D-14, D-15, D-16, D-17, D-18, D-19
 - Acceptance criteria: Reduced-motion alternatives preserve information and functionality; accessibility reviewed.
-- Status: TODO
+- Review candidate: D20-v1 bounded native/static QA PASS on 2026-11-09. The [motion handoff](../../docs/handoff/D20-motion.md) records timing/easing, eight interaction groups, Reduced Motion equivalents, exact Figma page 311:2 and specimen links, native/static QA and evidence limits. Existing accepted designs and DEC/G/F holds remain authoritative. Owner design acceptance is pending; no runtime, prototype or full-product approval is implied. D21–D23 remain TODO.
+- Status: REVIEW
 
 ### D-21 — Interactive Prototypes
 - Objective: Demonstrate approved journeys in Figma.
