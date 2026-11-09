@@ -1,6 +1,6 @@
 # D20 — Motion & Micro-interactions
 
-Status: REVIEW — D20-v1, 2026-11-09. Bounded native/static QA PASS; owner design acceptance pending. This specifies presentation of accepted behavior, not a working prototype, backend contract or full-product approval. D21–D23 remain TODO.
+Status: DONE — D20-v1 explicitly owner approved on 2026-11-09 as the final DESIGN-ONLY Motion & Micro-interactions baseline, following bounded native/static QA PASS. This specifies presentation of accepted behavior, not a working prototype, backend contract or full-product approval. D21–D23 remain TODO.
 
 ## Starting point and accepted sources
 
@@ -12,7 +12,7 @@ Native references: [Buttons 138:161](https://www.figma.com/design/o5x1eCbKM7xPx7
 
 ## Timing and easing
 
-These are proposed D20-v1 specification values, pending approval, not previously approved D10 tokens. No new variable, component family or animation-style library is created.
+These are owner-approved D20-v1 motion specification values, not previously approved D10 tokens. No new variable, component family or animation-style library is created.
 
 | Purpose | Duration | Easing | Limit |
 | --- | --- | --- | --- |
@@ -73,4 +73,12 @@ D10 collections remain 61 primitives / 43 semantic colors / 15 geometry variable
 
 Screenshots show resting state, not temporal playback. Native keyframes and their bounds/easing were inspected; no exported video or sampled playback was run because a local frame extractor was unavailable. These simple non-overshooting entrance tracks do not demonstrate runtime timing, compositing, interruptions, focus traps, focus return, screen-reader announcements, scrolling/keyboard clearance, Reduced Motion preference detection or WCAG certification. Existing D13–D19 complete-screen QA is reused, not repeated. Dashboard updates, theme/language switches and qualified status changes are specification coverage, not new animated product screens.
 
-DEC-05/06/07/08/11/12 remain unresolved; G-01–G-17 remain open; F-17–F-20 remain deferred; Statistics semantics remain conditional under G-17. Arabic editorial review and existing detached-feedback/variant-sizing cautions remain. No backend runtime, policy, authorization/RLS, persistence, transition enforcement, security or production readiness is verified. The frontend gate remains closed until full owner Figma approval is recorded. Owner acceptance of D20-v1 is pending; D20 remains REVIEW, D21–D23 TODO. No D23 cleanup is performed.
+DEC-05/06/07/08/11/12 remain unresolved; G-01–G-17 remain open; F-17–F-20 remain deferred; Statistics semantics remain conditional under G-17. Arabic editorial review and existing detached-feedback/variant-sizing cautions remain. No backend runtime, policy, authorization/RLS, persistence, transition enforcement, security or production readiness is verified. The frontend gate remains closed until full owner Figma approval is recorded. D20-v1 is owner accepted for design only; D20 is DONE, D21–D23 TODO. No D23 cleanup is performed.
+
+## D20-v1 final owner acceptance — 2026-11-09
+
+The owner explicitly approved D20-v1 Motion & Micro-interactions as a final DESIGN-ONLY baseline in the D20 FINAL CLOSURE instruction. Approval covers the specifications, Reduced Motion alternatives and native specimens recorded above at source commit `6b87da26772c3e97a7089f5352d3c4468bd72727`, including [D20 page 311:2](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=311-2) and the exact linked specimen nodes. Existing Figma REVIEW labels are historical; no Figma edits were authorized or performed for closure.
+
+The approved motion tables, easing/durations, immediate equivalent states, exact references and backend-independent implementation requirements remain unchanged. Prior bounded QA and all documented playback, source-fingerprint and runtime evidence limits remain applicable; closure does not repeat visual/native QA or resolve those limits. Design acceptance does not establish working prototypes, runtime accessibility, authorization/RLS, status policies, persistence, security or production readiness, approve the full product design, or release the frontend gate. Optional legacy Supabase integration and every unresolved DEC/G/F hold remain as documented above.
+
+D20 is DONE. D21–D23 remain TODO and unstarted. The owner separately authorized this documentation-only closure, commit/push and safe fast-forward of main; no D21 work or D23 cleanup is included.
