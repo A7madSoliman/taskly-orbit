@@ -139,7 +139,7 @@ Statuses: TODO, IN_PROGRESS, BLOCKED, REVIEW, DONE. TODO means unstarted, not de
 - Acceptance: D16-v1 owner acceptance on 2026-11-04 after bounded final QA PASS; OR-S12–OR-S14, contract mappings, responsive evidence and limitations are recorded in the [handoff](../../docs/handoff/D16-epics.md). Create/edit eligibility and date policy remain conditional; existing holds remain open. D17–D23 remain TODO.
 - Status: DONE
 
-Current reconciliation: D-14 through D-18 are DONE under their recorded owner design acceptances; D-19 through D-23 remain TODO. Earlier status summaries above are historical where they conflict with these individual entries.
+Current reconciliation: D-14 through D-18 are DONE under their recorded owner design acceptances; D-19 is REVIEW pending owner design acceptance; D-20 through D-23 remain TODO. Earlier status summaries above are historical where they conflict with these individual entries.
 
 Design acceptance for D-17–D-23 concerns the editable Figma design and documented conditional behavior. Backend authorization, RLS, constraints, API compatibility, transition enforcement, runtime behavior, security and persistence belong to the separate implementation validation gate. DEC-05/DEC-07 and G-04/G-08 remain unresolved integration requirements; this separation does not approve or verify them. Existing phase-specific design criteria remain in force.
 
@@ -164,7 +164,8 @@ Design acceptance for D-17–D-23 concerns the editable Figma design and documen
 - Deliverables: Reusable feedback patterns, populated state matrix and recovery guidance.
 - Dependencies: D-06, D-13, D-14, D-15, D-16, D-17, D-18
 - Acceptance criteria: Applicable states covered; recovery traceable; accessibility and language/theme variants reviewed.
-- Status: TODO
+- Review candidate: D19-v1 bounded static QA PASS on 2026-11-09. The [handoff](../../docs/handoff/D19-feedback-states.md) records the 19-surface coverage matrix, exact native shell feedback and compact display specimens, D11 reuse, recovery rules and limitations. Accepted source pages are preserved; all DEC/G/F holds remain open as recorded. Owner design acceptance is pending; no implementation or full-product approval is implied. D20 is not started.
+- Status: REVIEW
 
 ## Finalization
 
