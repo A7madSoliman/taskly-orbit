@@ -182,6 +182,7 @@ Design acceptance for D-17–D-23 concerns the editable Figma design and documen
 - Deliverables: Linked prototypes, scenario coverage, entry points and review notes.
 - Dependencies: D-19, D-20
 - Acceptance criteria: Core journeys navigable; permission/states represented; simulated behavior labeled.
+- B01: REVIEW — bounded pointer-navigation QA PASS on 2026-11-09, pending owner batch review. Real prototype authoring and a preview click were verified before construction. The [prototype handoff](../../docs/handoff/D21-prototypes.md) records eight meaningful entry points, core navigation/overlays, conditional simulated outcomes, actual-parent returns, sampled standard entrances and Instant/Reduced Motion playback, representative desktop/mobile EN/AR Light/Dark preview tests and remaining coverage gaps. D21 remains TODO by explicit owner instruction until full coverage and owner review; B01 does not approve full D21, runtime accessibility, backend behavior or the frontend gate. All DEC/G/F holds remain. D22–D23 remain TODO.
 - Status: TODO
 
 ### D-22 — Responsive, RTL, Theme and Accessibility Design QA
