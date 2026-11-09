@@ -192,7 +192,8 @@ Design acceptance for D-17–D-23 concerns the editable Figma design and documen
 - Deliverables: QA matrix, findings, fixes and residual issue decisions.
 - Dependencies: D-21
 - Acceptance criteria: Mobile/desktop, RTL/LTR, themes, accessibility and reduced motion checked; blockers resolved.
-- Status: TODO
+- QA: Bounded D22 final design QA PASS; 19-surface rendered sampling, representative native and measured contrast evidence are recorded in the [handoff](../../docs/handoff/D22-final-design-qa.md). Owner acceptance remains pending. Existing holds remain open; D23 remains TODO.
+- Status: REVIEW
 
 ### D-23 — Figma Developer Handoff
 - Objective: Package approved design for development.
