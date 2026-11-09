@@ -1,6 +1,26 @@
 # D17 — Tasks and Kanban
 
-Status: TODO. B01 Tasks & Kanban: owner accepted through B02 authorization and merge to main (69bf92f). B02 Create Task: bounded owner acceptance through B03 authorization and merge to main (d7937fd). B03 Task Details: REVIEW following bounded design QA; owner review pending. [Figma page 243:1381](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=243-1381). Existing D07, D10–D16 and D11 sources were preserved.
+Status: REVIEW for design acceptance. B01 Tasks & Kanban: owner accepted through B02 authorization and merge to main (69bf92f). B02 Create Task: bounded owner acceptance through B03 authorization and merge to main (d7937fd). B03 Task Details: bounded visual QA PASS and merged commit b651de3, but explicit owner approval is not recorded; owner review remains pending. D17-v1 owner acceptance is also pending. [Figma page 243:1381](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=243-1381). Existing D07, D10–D16 and D11 sources were preserved.
+
+## Design acceptance alignment
+
+The owner has approved Taskly Orbit as a reusable backend-agnostic UI/UX design system. These editable designs cover desktop/mobile, English LTR/Arabic RTL, Light/Dark, conditional read/write outcomes, non-drag status interaction and accessible alternatives as static design intent. They can be accepted as a design without live database verification. The audited Supabase backend is an optional integration reference; a new or other compatible backend may implement the same documented intent.
+
+B01/B02 have bounded owner acceptance in the subsequent batch handoffs. B03 has visual QA PASS in the local B03 report and documented Figma nodes below; a Git merge is not formal owner design approval. The exact remaining design approval is explicit owner acceptance of B03 and D17-v1 under the revised gate. Until recorded, D17 remains REVIEW. No repeat of completed visual QA is required solely because backend policies are unresolved.
+
+DEC-05/G-04 task operation rights and DEC-07/G-08 status transitions, default and legacy handling remain unresolved compatibility and implementation requirements. A future implementation must reconcile the chosen API, authorization/RLS, constraints, transition enforcement, runtime behavior, security and persistence before claiming those properties. The conditional status examples do not define allowed destinations. The visually enabled Change status action at [257:3334](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=257-3334) remains conditional design intent; its enabled state must follow the selected implementation's verified eligibility and destination policy.
+
+## Historical final acceptance review — blocked under superseded combined gate
+
+The following is the preserved earlier review record. Its D17 TODO conclusion and backend evidence prerequisite have been superseded for **design acceptance** by the owner's independent-gates decision above; its DEC/G findings remain open for integration.
+
+The exact D17 backlog criterion requires “Transitions and permissions verified; accessible interaction alternatives and all modes specified.” The bounded B01–B03 designs and their prior QA specify conditional, non-drag interaction and bilingual/theme/responsive intent, but they do not verify the missing policies. D17 remains TODO; no D17-v1 acceptance is recorded.
+
+- **Transitions:** D02 G-08 establishes eight status values and validated requested values, not the permitted current-to-next transitions, legacy handling or ordering contract. DEC-07 remains blocked pending a feasible, owner-approved transition and legacy-value policy supported by backend evidence. Conditional status examples cannot establish the missing graph.
+- **Permissions:** D02 OP-19/OP-29 document source-level scoped reading and separate edit eligibility; OP-21/OP-22 document verified-user/editor checks, viewer restrictions and relation scope checks in the audited handlers. These are evidence of those source checks, not an approved operation-rights matrix or verified database/RPC enforcement. DEC-05 and G-04 remain open; obtain authoritative policy evidence and owner-approved rights, including creator/member cases, without treating the UI as authorization.
+- **Figma review limitation:** A representative [nested Task Details render 257:3334](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=257-3334) shows a visually enabled Change status action while only general editing eligibility is stated. Its availability must be checked against the eventual transition/permission decision; this review did not mutate Figma. The [B01 status choice 243:2969](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=243-2969) is an explicitly conditional example, not proof of any permitted destination.
+
+Recommended next decision: obtain the backend owner's smallest authoritative evidence for task status transitions and applicable task-operation authorization, including relevant database/RPC policies and legacy statuses; have the project owner approve the feasible policy and resolve DEC-05/DEC-07 as applicable. Then reassess affected action availability and the exact D17 gate. Existing date, uncertainty and other DEC/G/F holds remain unchanged; static design review is not runtime or accessibility certification.
 
 ## B01 — OR-S15
 

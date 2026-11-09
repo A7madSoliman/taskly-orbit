@@ -139,12 +139,16 @@ Statuses: TODO, IN_PROGRESS, BLOCKED, REVIEW, DONE. TODO means unstarted, not de
 - Acceptance: D16-v1 owner acceptance on 2026-11-04 after bounded final QA PASS; OR-S12–OR-S14, contract mappings, responsive evidence and limitations are recorded in the [handoff](../../docs/handoff/D16-epics.md). Create/edit eligibility and date policy remain conditional; existing holds remain open. D17–D23 remain TODO.
 - Status: DONE
 
+Current reconciliation: D-14 through D-16 are DONE under their recorded owner acceptances; D-17 is REVIEW under the design-only gate below, and D-18 through D-23 remain TODO. Earlier status summaries above are historical where they conflict with these individual entries.
+
+Design acceptance for D-17–D-23 concerns the editable Figma design and documented conditional behavior. Backend authorization, RLS, constraints, API compatibility, transition enforcement, runtime behavior, security and persistence belong to the separate implementation validation gate. DEC-05/DEC-07 and G-04/G-08 remain unresolved integration requirements; this separation does not approve or verify them. Existing phase-specific design criteria remain in force.
+
 ### D-17 — Tasks and Kanban
 - Objective: Design task/board workflows confirmed by Discovery.
 - Deliverables: Responsive editable task/board screens, interaction specs and API mappings.
 - Dependencies: D-02, D-06, D-07, D-11, D-12, D-14
-- Acceptance criteria: Transitions and permissions verified; accessible interaction alternatives and all modes specified.
-- Status: TODO
+- Acceptance criteria: Editable task/board designs and documented conditional transition and permission states reviewed; accessible non-drag interaction alternatives, desktop/mobile, English LTR/Arabic RTL and Light/Dark modes specified. Record owner design approval separately from backend policy verification.
+- Status: REVIEW — bounded B01/B02 owner acceptance and B03 visual QA PASS recorded; explicit B03 owner design approval and D17-v1 owner acceptance remain pending. DEC-05/DEC-07 and G-04/G-08 remain open for integration.
 
 ### D-18 — Statistics and Calendar
 - Objective: Design views confirmed by scope and contracts.

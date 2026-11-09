@@ -32,7 +32,7 @@ Taskly Orbit is a brand-new, independent, bilingual task management product. Dir
 
 ## Design gates
 1. No invented product or backend behavior. Unknown capabilities remain questions until supported by verified evidence.
-2. API-to-screen traceability: map data-dependent screens, states, and actions to verified API evidence and permission constraints. Record unsupported behavior and gaps before approval.
+2. Design-to-behavior traceability: map data-dependent screens, states and actions to documented assumptions, conditional behavior and any available API evidence. Record compatibility gaps without treating an optional backend as the design's permanent dependency.
 3. Figma is the design source of truth. Record exact approved file/node links and approval versions in documentation.
 4. Use reusable editable Figma components and tokens, including variants and states.
 5. Design mobile and desktop deliberately and specify responsive behavior.
@@ -40,10 +40,18 @@ Taskly Orbit is a brand-new, independent, bilingual task management product. Dir
 7. Specify motion accessibility and reduced-motion alternatives. Essential information must not depend on animation.
 8. No frontend development until the full Figma design is approved by the project owner and approval evidence is recorded in `docs/handoff/`.
 
+## Independent design and implementation gates
+
+Taskly Orbit is a reusable, backend-agnostic UI/UX design system. Future implementation may use a new backend, the audited Supabase backend, or another compatible API. The audited backend is an optional integration reference.
+
+- **Design acceptance:** The owner reviews complete editable Figma screens and the approved design system, deliberate desktop/mobile behavior, English LTR/Arabic RTL, Light/Dark, evidence-backed interaction states, accessible interaction alternatives and clearly documented conditional behavior. Design acceptance can be granted without live backend or database verification. It does not approve unsupported behavior as implemented.
+- **Backend / implementation validation:** Before claiming integration or production readiness, verify actual authorization and RLS, database constraints, API compatibility, status transition enforcement, runtime behavior, security and persistence against the selected backend. Keep unresolved DEC/G/F items visible as integration requirements.
+- **Frontend gate:** No frontend development until the full Figma design is approved by the project owner and approval evidence is recorded in `docs/handoff/`.
+
 ## Backend-Aware, Frontend-Focused
 
 Taskly Orbit is a frontend-focused training and portfolio project.
-- Reuse the existing Supabase backend contract; prioritize frontend architecture and UX quality.
+- Treat the existing Supabase contract as an optional compatibility reference; prioritize reusable frontend architecture and UX quality.
 - Do not propose new backend endpoints, tables, migrations or RPCs by default.
 - Treat missing backend evidence as a documented design constraint, not an automatic new project.
 - Continue independent design wherever safe; hold only behavior affected by unresolved backend evidence.

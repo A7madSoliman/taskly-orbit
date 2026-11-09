@@ -2,6 +2,10 @@
 
 A brand-new, independent, bilingual task management product.
 
+Taskly Orbit is a reusable backend-agnostic UI/UX design system. The audited Supabase backend is an optional integration reference; implementation may use a new or another compatible backend. Design acceptance reviews editable Figma screens, responsive and bilingual/theme coverage, states and accessible alternatives. Backend authorization, RLS, constraints, API and status-policy compatibility, runtime behavior, security and persistence require separate validation against the chosen implementation. Full owner approval of Figma remains required before frontend development.
+
+Current D17 design status: **REVIEW**. B01/B02 have bounded owner acceptance; B03 has visual QA PASS but no recorded explicit owner approval. D17-v1 acceptance is pending. DEC-05/DEC-07 and G-04/G-08 remain unresolved integration requirements; see the [D17 handoff](docs/handoff/D17-tasks.md). D18 has not started.
+
 Selected visual direction: **Concept C — Balanced Hybrid, with the existing light sidebar**.
 
 This is a design-first documentation workspace. Frontend development waits for full Figma design approval recorded by the project owner. No application or dependencies are initialized.
