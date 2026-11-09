@@ -1,8 +1,12 @@
 # D21 — Interactive Prototypes / B01–B02
 
-Current: B02 representative coverage is REVIEW, pending owner acceptance; D21 remains TODO. See the B02 extension below for current entry points, tested versus wired-only coverage and remaining gaps. B01 records below retain their original dated evidence; the B02 brief designates B01 as its accepted source.
+## Final owner acceptance — 2026-11-10
 
-D21 status: TODO, retained by explicit owner instruction until full prototype coverage and owner review. B01 status: REVIEW — bounded pointer-navigation QA PASS, pending owner batch acceptance. D21-B01-v1, 2026-11-09. No D22 work is started.
+**D21 DONE:** The owner explicitly approved D21-v1 Interactive Prototypes as the final **DESIGN-ONLY** baseline, including B01 and B02 representative interactive journeys. Dated batch records below are historical; their pending-review and TODO statements are superseded by this acceptance. Preview links, tested versus wired-only coverage, simulation limitations and Reduced Motion equivalents remain applicable. Approval does not imply every control is functional, dynamic form validation, backend or data persistence, runtime accessibility certification, or complete application state. Existing DEC/G/F holds and backend-agnostic design rules remain in force; D22–D23 remain TODO. Full Figma approval remains required before frontend development.
+
+Historical B02 status before acceptance: B02 representative coverage is REVIEW, pending owner acceptance; D21 remains TODO. See the B02 extension below for current entry points, tested versus wired-only coverage and remaining gaps. B01 records below retain their original dated evidence; the B02 brief designates B01 as its accepted source.
+
+Historical B01 status: D21 was TODO, retained by explicit owner instruction until full prototype coverage and owner review. B01 status: REVIEW — bounded pointer-navigation QA PASS, pending owner batch acceptance. D21-B01-v1, 2026-11-09. No D22 work is started.
 
 ## Start here
 
