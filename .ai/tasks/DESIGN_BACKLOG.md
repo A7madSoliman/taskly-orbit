@@ -139,7 +139,7 @@ Statuses: TODO, IN_PROGRESS, BLOCKED, REVIEW, DONE. TODO means unstarted, not de
 - Acceptance: D16-v1 owner acceptance on 2026-11-04 after bounded final QA PASS; OR-S12–OR-S14, contract mappings, responsive evidence and limitations are recorded in the [handoff](../../docs/handoff/D16-epics.md). Create/edit eligibility and date policy remain conditional; existing holds remain open. D17–D23 remain TODO.
 - Status: DONE
 
-Current reconciliation: D-14 through D-17 are DONE under their recorded owner design acceptances; D-18 through D-23 remain TODO. Earlier status summaries above are historical where they conflict with these individual entries.
+Current reconciliation: D-14 through D-17 are DONE under their recorded owner design acceptances; D-18 is REVIEW pending explicit D18-v1 owner design approval; D-19 through D-23 remain TODO. Earlier status summaries above are historical where they conflict with these individual entries.
 
 Design acceptance for D-17–D-23 concerns the editable Figma design and documented conditional behavior. Backend authorization, RLS, constraints, API compatibility, transition enforcement, runtime behavior, security and persistence belong to the separate implementation validation gate. DEC-05/DEC-07 and G-04/G-08 remain unresolved integration requirements; this separation does not approve or verify them. Existing phase-specific design criteria remain in force.
 
@@ -156,7 +156,8 @@ Design acceptance for D-17–D-23 concerns the editable Figma design and documen
 - Deliverables: Responsive editable views, data definitions, states and API mappings.
 - Dependencies: D-02, D-06, D-07, D-11, D-12, D-14
 - Acceptance criteria: Metrics/calendar behavior evidence-backed; unsupported aggregation flagged; modes reviewed.
-- Status: TODO
+- Acceptance review: B01 structural foundation and B02 dashboard presentation are accepted as bounded batches in the owner's D18 FINAL brief (2026-11-09). Existing responsive/native/state QA supports design review; G-17 populated semantics and all implementation holds remain unresolved. Explicit D18-v1 complete owner design approval is still required; see the [D18 handoff](../../docs/handoff/D18-statistics.md).
+- Status: REVIEW
 
 ### D-19 — Loading, Empty, Error, Success and Permission States
 - Objective: Complete consistent feedback across screens.

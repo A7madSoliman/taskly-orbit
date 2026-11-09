@@ -1,6 +1,6 @@
 ﻿# D18 — Statistics & Calendar / B01
 
-Status: TODO for D18. The owner accepted B01 as the structural foundation in the B02 brief on 2026-11-09. B02 bounded static design QA PASS; visual upgrade pending owner review. Backend-agnostic editable OR-S18 design; audited API mappings below are optional integration examples. G-17 remains unresolved. No production metric definitions, formulas or live API guarantees are approved.
+Status: REVIEW for D18. B01 structural foundation and B02 bounded dashboard presentation are accepted as batches; explicit D18-v1 final owner design approval is not recorded. Backend-agnostic editable OR-S18 design; audited API mappings below are optional integration examples. G-17 remains unresolved. No production metric definitions, formulas or live API guarantees are approved.
 
 ## Exact Figma references
 
@@ -53,6 +53,8 @@ DEC-05/06/07/08/11/12 and G-01–G-17 remain unresolved as recorded; F-17–F-20
 
 ## B02 — Premium dashboard presentation
 
+Historical batch QA record follows; the final-review decision below supersedes its pending-batch-approval and D18 TODO wording.
+
 Owner direction on 2026-11-09 accepts B01 structure and requests a visual dashboard upgrade. B01 nodes and recovery examples above remain preserved; the following B02 nodes are alongside them on page 287:2. This is assistant bounded visual QA, not owner approval of B02 or final D18 acceptance.
 
 | Composition | EN Light | AR Light | EN Dark | AR Dark |
@@ -72,3 +74,20 @@ Text labels and exact values remain visible beside charts; color and animation a
 Motion intent: use existing D11 hover/pressed/focus feedback on actionable controls. A subtle opacity transition may introduce an independently refreshed section after confirmed reading; retain the scope label and visible loading/error feedback. Do not animate number counting or require a donut sweep, autoplay, hover tooltip or moving element to understand values. Reduced-motion uses immediate replacement with the same labels and announcements. This is documented interaction intent; no working runtime or new prototype is claimed.
 
 B02 QA inspected all eight final desktop/mobile bases, all four tablet modes, 320/360/390px examples and the three chart fallback/empty/error examples. Corrected horizontal chart clipping, compact day overflow, text wrapping, tablet date widths and Arabic action ordering; inspected affected renders after fixes. Native inspection found editable frames, linked instances, text, ellipse arcs and rectangles, no image fills, and only Inter/Cairo fonts. Backend, permissions, persistence, keyboard/screen-reader behavior and accessibility certification remain outside this static QA. D18 remains TODO; D19 was not started.
+
+## D18 final design-gate review — 2026-11-09
+
+Outcome: REVIEW. The owner's D18 FINAL brief explicitly lists B01 (287:2) and B02 (295:443) as accepted batches and requests recording B02 bounded visual acceptance. B02 bounded visual acceptance is therefore recorded from that explicit batch statement, separately from the assistant's prior QA PASS. Neither continuation nor Git merge is treated as D18-v1 approval. No explicit complete D18-v1 owner approval is recorded.
+
+| Design criterion | Existing evidence reviewed | Outcome |
+| --- | --- | --- |
+| Dashboard hierarchy and native editable KPI/donut/bar presentation | B02 composition table; prior QA of 302 linked instances, editable ellipse arcs/rectangles/text, no image fills or missing masters | Bounded PASS; batch accepted |
+| Responsive calendar/list alternatives, EN/AR, Light/Dark | Eight B02 desktop/mobile bases, four tablet modes and 320/360/390px examples; prior rendered QA and native modes | Bounded PASS |
+| Independent filters and recovery | Behavior mapping above; D06 OR-S18/J-16; optional OP-27/28 scopes; B01 state map, including 290:402/290:466 partial compositions | Bounded PASS |
+| Loading, errors, valid empty, genuine zero and unavailable data | B01 state map; B02 296:1524/296:1528; section retry never substitutes zero or clears the other result | Bounded PASS |
+| Textual chart fallback, motion alternatives and synthetic labels | B02 visible labels/values and 296:1520; documented reduced-motion intent; synthetic fixture limits above | Bounded PASS for static design intent |
+| G-17 and implementation holds | Backend-agnostic rules and DEC/G/F holds above; populated semantics remain conditional | Preserved; not verified or closed |
+
+This is an evidence reconciliation using existing B01/B02 QA and handoff, without fresh exhaustive visual QA or Figma changes. No additional design defect is identified in that bounded evidence. Runtime accessibility, authorization, aggregation, API compatibility, security and persistence remain separate implementation obligations, not prerequisites for conditional design-only acceptance.
+
+Exact remaining closure decision: the owner must explicitly approve D18-v1 complete Statistics & Calendar design acceptance, comprising the accepted B01 structure and B02 presentation with synthetic examples and all documented G-17/DEC/G/F holds preserved. Until that approval is recorded, keep D18 REVIEW. D19–D23 remain TODO; no next phase is started and the full-product Figma approval gate before frontend implementation remains in force.
