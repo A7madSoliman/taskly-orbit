@@ -1,6 +1,6 @@
 # D19 — Feedback & Permission States
 
-Status: REVIEW — bounded static QA PASS, pending explicit owner design acceptance. D19-v1 review candidate, 2026-11-09. This is one cross-product feedback reconciliation, not a redesign or full-product approval. D20 is not started.
+Status: DONE — D19-v1 explicitly owner approved on 2026-11-09 following bounded static QA PASS. This is design-only acceptance of one cross-product feedback reconciliation, not a redesign or full-product approval. D20–D23 remain TODO.
 
 ## Sources and boundaries
 
@@ -134,4 +134,12 @@ Accepted D13–D18 QA supplies complete-screen, field/error/focus, Remember chec
 
 DEC-05/06/07/08/11/12 remain unresolved; G-01–G-17 remain open and F-17–F-20 deferred. Statistics populated semantics remain conditional under G-17. Detached feedback requires future drift review; shared feedback variant switches can restore fixed-width internals and require rechecking local fill/hug overrides. Arabic copy remains subject to owner editorial review. No API/backend policy, authorization/RLS, persistence, transition enforcement, runtime or production readiness is verified. The audited backend remains an optional integration reference.
 
-Owner acceptance required: explicitly approve this D19-v1 matrix, shell feedback specimens, compact controls and conditional recovery rules. Until then D19 stays REVIEW, not DONE. No full-product Figma approval, frontend work, merge to main or D20 is authorized by this handoff.
+## D19-v1 owner acceptance — 2026-11-09
+
+The owner explicitly approved the 19-surface feedback coverage, native shell feedback specimens, compact display-control specimens, conditional permission states, and recovery and safe-return rules in the D19 FINAL CLOSURE instruction. Approval applies to D19-v1 at the exact node links above, including [page 302:2](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=302-2), with source commit `13ff7a138a657ae3a75268ab4442ff47a6d3bbbb`. The page's existing REVIEW label is historical; no Figma edits were authorized for closure.
+
+This is DESIGN-ONLY acceptance. Existing bounded QA is reused without repeated visual inspection. All limitations and unresolved DEC/G/F holds above remain unchanged; acceptance does not verify backend policies, runtime accessibility, authorization, security or persistence, approve the full product, or release the frontend gate. D20–D23 remain TODO. The owner separately authorized documentation closure, commit/push and a safe fast-forward of main.
+
+## Recorded D23 delivery goal — deferred
+
+D23 must provide clearly organized Figma pages, one obvious developer starting point, reusable design-system documentation and backend-independent requirements. Legacy Supabase integration remains optional. Remove or archive only verified obsolete duplicates and temporary artifacts after dependency review; preserve approved components, decisions and required evidence. No cleanup or destructive deletion is performed in D19 closure, and D23 is not started.
