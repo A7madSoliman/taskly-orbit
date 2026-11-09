@@ -1,4 +1,6 @@
-# D21 — Interactive Prototypes / B01 Core Journeys
+# D21 — Interactive Prototypes / B01–B02
+
+Current: B02 representative coverage is REVIEW, pending owner acceptance; D21 remains TODO. See the B02 extension below for current entry points, tested versus wired-only coverage and remaining gaps. B01 records below retain their original dated evidence; the B02 brief designates B01 as its accepted source.
 
 D21 status: TODO, retained by explicit owner instruction until full prototype coverage and owner review. B01 status: REVIEW — bounded pointer-navigation QA PASS, pending owner batch acceptance. D21-B01-v1, 2026-11-09. No D22 work is started.
 
@@ -150,3 +152,165 @@ Remaining coverage before full D21 acceptance:
 - All native-wired branches not exercised in preview remain labeled as such; full semantic/state coverage and owner review are still required.
 
 DEC-05/06/07/08/11/12 remain unresolved; G-01–G-17 OPEN; F-17–F-20 deferred; Statistics conditional under G-17. Design is backend-agnostic; audited legacy Supabase remains optional. No permission, transition policy, API compatibility, RLS, persistence, security or production readiness is verified. Frontend remains gated on full owner Figma approval. D21 stays TODO, B01 awaits owner batch review, D22–D23 stay TODO. Stop after B01; no D23 cleanup is performed.
+
+## B02 — Prototype Coverage Completion / 2026-11-10
+
+B02 status: **REVIEW — bounded representative pointer/navigation QA PASS**, pending owner review. D21 remains **TODO**. The owner designated B01 page 316:437 as the accepted source for this extension. B01's dated evidence and limitations above remain historical; the coverage below supersedes only the gaps explicitly exercised here. No D22 or D23 work is performed.
+
+Safely fast-forwarded main to verified B01 commit `66e28fb79bf801418e51258443777331ec5844c0`; verified B01 ancestry before deleting its merged local/remote feature branch. B02 uses `design/d21-b02-prototypes`. All Figma edits are within the existing prototype page; approved product source pages, masters and tokens are preserved.
+
+### B02 entry points
+
+All B02 paths are Instant / Reduced Motion equivalents. Start Epic create/edit from the accepted B01 Epics collection, so overlays capture a real parent; do not start an isolated overlay and expect CLOSE to reconstruct an origin.
+
+| Journey entry | Actual Preview link | Exact root |
+| --- | --- | --- |
+| signup | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-2892&page-id=316%3A437&starting-point-node-id=377-2892&scaling=scale-down) | [377:2892](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-2892) |
+| recovery | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-3145&page-id=316%3A437&starting-point-node-id=377-3145&scaling=scale-down) | [377:3145](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3145) |
+| resetEntry | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-3272&page-id=316%3A437&starting-point-node-id=377-3272&scaling=scale-down) | [377:3272](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3272) |
+| members | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-3557&page-id=316%3A437&starting-point-node-id=377-3557&scaling=scale-down) | [377:3557](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3557) |
+| landing | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-4093&page-id=316%3A437&starting-point-node-id=377-4093&scaling=scale-down) | [377:4093](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4093) |
+| projectView | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-4725&page-id=316%3A437&starting-point-node-id=377-4725&scaling=scale-down) | [377:4725](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4725) |
+| mobileEN | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-6385&page-id=316%3A437&starting-point-node-id=377-6385&scaling=scale-down) | [377:6385](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6385) |
+| statsScope | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-6832&page-id=316%3A437&starting-point-node-id=377-6832&scaling=scale-down) | [377:6832](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6832) |
+| permissionUnknown | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=377-6371&page-id=316%3A437&starting-point-node-id=377-6371&scaling=scale-down) | [377:6371](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6371) |
+| Epics create/edit, extending B01 | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=324-427&page-id=316%3A437&starting-point-node-id=324-427&scaling=scale-down) | [324:427](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=324-427) |
+| AR Dark mobile create/drawer, extending B01 | [Open Preview](https://www.figma.com/proto/o5x1eCbKM7xPx7SKB0hsI9/Taskly-Orbit?node-id=324-3532&page-id=316%3A437&starting-point-node-id=324-3532&scaling=scale-down) | [324:3532](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=324-3532) |
+
+The page now has 18 configured native starting points, including B01 evidence/standard entries. B02 adds 90 bounded fixed-state frames, not a new component family or new product-screen design. Existing B01 connections are reused; new entry actions/lab links extend B01 roots `324:44`, `324:236`, `324:427`, `324:485`, `324:3532` and `324:3381`. Their lab headers are allowed to grow; original accepted product roots are not prototype destinations. Reused D11 references include [Responsive Drawer 150:349](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=150-349), [Shared Feedback 149:151](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=149-151), plus the Button, Dialog Shell and Decision references recorded above.
+
+### Journey coverage and evidence
+
+“Tested” means real pointer playback in Figma Preview plus relevant settled render inspection. “Wired-only” means native reaction/destination readback without a claim that that branch was played. The native graph resolves all destinations; that alone is not playback verification.
+
+| Priority / traceability | Representative tested navigation | Wired-only / remaining coverage |
+| --- | --- | --- |
+| Authentication / J-01, J-02, OR-S02–S04 | Sign in → Sign up → pending → rejection → explicit resubmit → uncertainty → Recovery; recovery request → qualified generic acknowledgement → Sign in. Supplied reset-entry lab → context check → unavailable → deliberate check → separately qualified context → Reset → pending → uncertain → Sign in; reset dirty Keep editing; qualified reset → Sign in. Qualified Sign up → Sign in also exercised | Recovery rejection/uncertainty, invalid reset context and reset rejection remain wired-only. No recovery email/link delivery, session or reset-context provenance is proven |
+| Members / Invite / J-08, OR-S09–S10 | Members → Invite overlay → dirty Cancel → Keep editing; send → rejection → Review draft; send → uncertainty → actual Members return; qualified acknowledgement → Close to captured Members. Unknown eligibility and established restriction fixtures each → Safe return | Stay/review is a deliberate no-op; dirty Discard is wired-only. No roster read or displayed role grants invitation rights; acknowledgement proves neither delivery nor membership |
+| Invitation landing / J-09, OR-S11 | Explicit Accept → simulated denied → safe Projects; separately qualified acknowledgement with reference → B01 context-check gate; acknowledgement without reference → Projects | Unknown eligibility and uncertain acceptance remain wired-only. Auth continuation/context survival are unsupported simulations; no automatic acceptance or project-access guarantee |
+| Projects / J-06, J-07, OR-S07–S08 | Projects → Create overlay → dirty Cancel/Keep; pending → definite rejection → deliberate resubmit; uncertain → Review Projects → explicit observed-origin CLOSE. Qualified acknowledgement → same read specimen/origin. Project view → Edit name → Cancel; Back → dirty Keep; Save → uncertainty → Read current values → Back to originating Projects fixture | Detail rejection/acknowledgement, dirty Discard and further field edits are wired-only or unwired. Baseline return/read fixtures cannot establish creation identity, durable persistence or causation |
+| Epics / J-10, J-11, OR-S13–S14 | Epics → Create → dirty Discard → actual collection; create → uncertain → collection-read specimen → actual origin; qualified acknowledgement → read/origin. Preserved B01 Open epic → edit-title lab → Cancel → parent; Back → dirty Keep; Save → uncertainty → deliberate Read current value → actual Epics CLOSE | Create rejection, edit rejection/acknowledgement and equivalent exits remain wired-only. Edit-title lab explicitly selects an already qualified fixed draft; it is not an invented product edit permission |
+| Mobile Tasks / J-13–J-15, OR-S15–S17 | EN Light 390 Tasks → actual drawer / Close; Task Details / Back; Create → pending → rejection → Correct draft; uncertain → explicit actual-parent review/return; qualified acknowledgement / Return. Conditional status option → Confirm → pending → uncertain → deliberate parent review; qualified result / Return. AR Dark 390 Create → explicit pending lab → 320px Arabic uncertain content → review/actual Tasks; AR drawer / Close | Status policy, live selectors/typing, mobile field edits, other parent variants and remaining status outcomes are not a full mobile application. Read actions expose a fixed parent snapshot, not executed reconciliation |
+| Statistics / J-16, OR-S18 | Independent Calendar View results → loading → simulated failure/partial → Retry section → Calendar loading → qualified fixed result. Independent Per-project View results → its loading → its failure/partial → its Retry → qualified result. Error text and final scrolled project error render inspected | Cancel-to-fixed-scope controls are wired-only; already-current Cancel is a no-op. Date typing, options, dynamic filters and result computation are unwired. Fixed Calendar range 2026-11-01–07 and independent Per-project range 2026-11-03–05 are synthetic examples, not defaults or policy |
+| Permission / recovery | Members unknown and established restriction, plus invitation denied, were played as distinct states. Denial safely returns; invitation reference still enters the existing separate context check | Standalone D19 unknown/denied entry routes are wired-only. No prototype performs permission checks or infers a role policy |
+
+### Native behavior, motion and simulation limits
+
+- Product controls carry the normal actions; the separate **PROTOTYPE SIMULATION / No backend** bar names fixed fixtures and says other controls are unwired. Lab controls select synthetic rejection, uncertainty, acknowledgement or qualified context. They are not API calls, checks, live responses, real grants or product settings.
+- Text fields, date inputs and options are fixed display fixtures. Submission represents a separately assumed valid synthetic draft and applicable eligibility; placeholder appearance does not authorize blank input or bypass validation. No credentials/context material is captured. No working typing/validation, durable state, network or persistence engine is implemented.
+- Desktop create/invite and Epic editing use actual OVERLAY → SWAP → CLOSE stacks. Project details uses an explicit Projects-origin fixture. Mobile Create/Details/status/drawers use captured native overlay parents. Pending product submit/exit controls are unwired; there is no timed outcome, duplicate mutation or automatic uncertain-write replay. Figma viewer chrome/Escape/browser exit are outside these pointer guards.
+- Dirty fixtures represent an explicitly selected dirty case, not dirty-state detection. Cancel field edit discards only the unsubmitted fixed field draft. Acknowledgement never implies independently verified persistence; uncertainty is not silently converted to success on return.
+- Mobile “Read back” / “Read current status” / Arabic origin review deliberately return to the fixed captured Tasks snapshot. They do not perform a read or establish reconciliation, current status, creation identity or outcome. Collection snapshots and lab restarts remain fixed examples. This limitation must remain visible in implementation handoff.
+- Loading/error/partial Statistics frames replace only the affected result block. Native text signatures confirmed the other section is identical to its fixed baseline in all four loading/error fixtures. Retry is section-specific. Date scopes stay separate; no Calendar filter is inherited by Per-project. Aggregate semantics remain conditional under G-17.
+- Every B02 action is immediate with no required animation, preserving D20 information/action equivalence. Reuse B01 entries 07–08 and their already-tested 180 ms/8px standard dialog entrance evidence above; no repeated motion audit is claimed. B02 does not add standard drawer/exit/hover choreography. The four existing B01 presentation-only timers remain the only timers.
+- Drawer specimens reuse D11 responsive drawer instances over the actual Tasks backdrop; Close restores the captured Tasks parent. Other drawer items, search, pagination, unlisted navigation, secondary field edits and fixed option controls are explicitly unwired under the banner. Stay/review and selected/current-scope no-ops do not fabricate a result. These are review specimens, not a complete application.
+- AR Dark uncertainty reuses accepted 320px long-Arabic content centered in an opaque 390px prototype overlay; its content width is 320px, not a claim of a tested 320px browser viewport. This prevents unrelated parent content bleeding around it. Inter/Cairo, native semantic modes, logical actions, Latin brand direction and non-color feedback meaning are retained.
+
+### Bounded final QA
+
+Used the installed isolated Chrome Preview/debugging setup and existing Node built-ins; no dependencies or user-profile credentials were needed. Pointer suites: authentication, Members/invitations, Projects, Epic create, Epic edit, mobile, Statistics, final compact RTL retest, and qualified outcomes. Click logs and temporary screenshots remain outside the tracked repository. Navigating frames is checked against expected native IDs; Figma keeps the parent URL during overlays, so overlay/SWAP claims additionally rely on captured renders and native reaction readback.
+
+Final representative renders include authentication uncertainty/acknowledgement, invitation uncertainty and restriction, project/Epic uncertainty/readback, EN mobile pending/uncertainty/status, AR Dark drawer and long Arabic uncertainty, Calendar partial error and scrolled Per-project error. Initial scroll-restoration test-coordinate errors were corrected and mobile navigation rerun; they are not counted as passes. Corrected material defects before PASS: compact decision feedback overflow, clipped stacked lab buttons, wrong Calendar error wording, and 320/390 overlay-edge bleed. Only final passing renders are acceptance evidence.
+
+Native audit found 1,168 linked instances in the B02 fixture set, no missing masters, Inter/Cairo fonts and 4,472 nodes with variable bindings. Final targeted checks found no lab-header overflow or missing prototype destination. Sampled accepted source roots retained their names/geometry and zero prototype reactions: 176:254, 188:103, 203:100, 205:243, 209:133, 194:204, 199:1376, 224:3, 232:20, 249:808, 243:1909, 295:443 and 311:3. This is targeted preservation evidence plus mutation scope, not a whole-file historical fingerprint proof.
+
+Remaining D21 gaps: wired-only branches above; session restoration/sign-out and other approved journeys beyond B01/B02; full per-field/option/search/filter/pagination interactions; stateful data/context/history; full standard motion; complete 320/360/tablet viewport playback and real devices; keyboard/focus return/trapping, screen readers, touch, keyboard clearance and runtime Reduced Motion detection. These pointer/native samples do not certify runtime accessibility or WCAG. No previous full visual audit is repeated.
+
+DEC-05/06/07/08/11/12 remain unresolved; G-01–G-17 OPEN; F-17–F-20 deferred; Statistics conditional under G-17. Backend-independent requirements and optional legacy Supabase integration remain unchanged. No backend authorization/RLS, transition, API, security or persistence validation is claimed. Full owner approval remains required before frontend work. D21 stays TODO pending owner review; D22–D23 stay TODO. Stop after B02.
+
+### B02 exact fixture/source index
+
+All new roots below are on page 316:437. Accepted product/B01 sources are reused in prototype-only fixtures; mobileARPending derives from the new B02 mobile fixture as listed. No approved product root is edited or used as a prototype destination.
+
+| Fixture | B02 root | Reused source |
+| --- | --- | --- |
+| signup | [377:2892](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-2892) | 176:254 |
+| suPending | [377:2938](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-2938) | 176:867 |
+| suReject | [377:2984](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-2984) | 176:931 |
+| suUnknown | [377:3036](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3036) | 176:979 |
+| suAck | [377:3062](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3062) | 176:1029 |
+| suDirty | [377:3086](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3086) | 176:1077 |
+| recovery | [377:3145](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3145) | 181:233 |
+| recPending | [377:3170](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3170) | 181:620 |
+| recReject | [377:3195](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3195) | 181:647 |
+| recUnknown | [377:3224](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3224) | 181:679 |
+| recAck | [377:3248](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3248) | 181:711 |
+| resetEntry | [377:3272](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3272) | 188:439 |
+| resetCheck | [377:3290](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3290) | 188:493 |
+| resetUnavailable | [377:3308](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3308) | 188:560 |
+| resetInvalid | [377:3336](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3336) | 188:520 |
+| reset | [377:3362](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3362) | 188:103 |
+| resetPending | [377:3393](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3393) | 188:697 |
+| resetReject | [377:3424](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3424) | 188:734 |
+| resetUnknown | [377:3463](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3463) | 188:767 |
+| resetAck | [377:3489](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3489) | 188:802 |
+| resetDirty | [377:3513](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3513) | 188:835 |
+| members | [377:3557](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3557) | 203:100 |
+| memberUnknown | [377:3599](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3599) | 203:527 |
+| memberReadonly | [377:3643](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3643) | 204:280 |
+| invite | [377:3687](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3687) | 205:243 |
+| invPending | [377:3749](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3749) | 206:1849 |
+| invDirty | [377:3817](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3817) | 206:1916 |
+| invReject | [377:3887](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3887) | 206:1985 |
+| invUnknown | [377:3955](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-3955) | 206:2119 |
+| invAck | [377:4025](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4025) | 206:2188 |
+| landing | [377:4093](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4093) | 209:133 |
+| landUnknown | [377:4113](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4113) | 209:747 |
+| landDenied | [377:4137](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4137) | 209:818 |
+| landPending | [377:4161](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4161) | 209:769 |
+| landUncertain | [377:4188](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4188) | 209:862 |
+| landAck | [377:4217](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4217) | 209:891 |
+| landNoId | [377:4246](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4246) | 209:920 |
+| projectCreate | [377:4273](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4273) | 194:204 |
+| pcDirty | [377:4341](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4341) | 198:416 |
+| pcPending | [377:4410](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4410) | 198:365 |
+| pcReject | [377:4479](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4479) | 198:465 |
+| pcUnknown | [377:4548](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4548) | 198:514 |
+| pcAck | [377:4617](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4617) | 198:563 |
+| pcRead | [377:4677](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4677) | 193:651 |
+| projectView | [377:4725](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4725) | 201:1079 |
+| projectEdit | [377:4763](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4763) | 199:1376 |
+| peDirty | [377:4809](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4809) | 201:384 |
+| pePending | [377:4854](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4854) | 201:418 |
+| peReject | [377:4902](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4902) | 201:457 |
+| peUnknown | [377:4959](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-4959) | 201:504 |
+| peAck | [377:5011](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5011) | 201:546 |
+| peRead | [377:5054](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5054) | 201:606 |
+| epicCreate | [377:5095](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5095) | 224:3 |
+| ecDirty | [377:5183](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5183) | 225:1081 |
+| ecPending | [377:5279](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5279) | 225:982 |
+| ecReject | [377:5373](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5373) | 225:1183 |
+| ecUnknown | [377:5467](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5467) | 225:1282 |
+| ecAck | [377:5563](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5563) | 225:1384 |
+| ecRead | [377:5657](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5657) | 220:548 |
+| epicEdit | [377:5716](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5716) | 239:1797 |
+| eeDirty | [377:5813](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5813) | 233:777 |
+| eePending | [377:5905](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5905) | 233:835 |
+| eeReject | [377:5995](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-5995) | 233:893 |
+| eeUnknown | [377:6084](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6084) | 233:951 |
+| eeAck | [377:6176](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6176) | 233:1009 |
+| eeRead | [377:6267](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6267) | 238:1513 |
+| permissionDenied | [377:6357](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6357) | 302:129 |
+| permissionUnknown | [377:6371](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6371) | 302:205 |
+| mobileEN | [377:6385](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6385) | 243:1909 |
+| mobileCreate | [377:6466](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6466) | 249:808 |
+| mobileDetails | [377:6517](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6517) | 257:737 |
+| mobileARCreate | [377:6568](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6568) | 249:967 |
+| mobileARUncertain | [377:6619](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6619) | 252:1961 |
+| drawerEN | [377:6678](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6678) | 192:895 |
+| drawerAR | [377:6755](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6755) | 192:941 |
+| statsScope | [377:6832](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6832) | 295:443 |
+| statsCalendarLoading | [377:6983](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-6983) | 295:443 |
+| statsCalendarError | [377:7134](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-7134) | 295:443 |
+| statsProjectsLoading | [377:7285](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-7285) | 295:443 |
+| statsProjectsError | [377:7436](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=377-7436) | 295:443 |
+| mtPending | [378:5605](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-5605) | 324:861 |
+| mtUnknown | [378:5665](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-5665) | 324:1148 |
+| mtAck | [378:5727](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-5727) | 324:1291 |
+| mtReject | [378:5787](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-5787) | 324:1008 |
+| msChoice | [378:5847](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-5847) | 324:2557, 324:2558, 324:2559, 324:2560 |
+| msSelected | [378:5904](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-5904) | 324:2663, 324:2664, 324:2665, 324:2666 |
+| msPending | [378:5961](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-5961) | 324:2772 |
+| msUnknown | [378:6008](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-6008) | 324:2962, 324:2963 |
+| msAck | [378:6057](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=378-6057) | 324:3058 |
+| mobileARPending | [389:5587](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=389-5587) | 377:6568 |
