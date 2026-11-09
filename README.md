@@ -1,5 +1,7 @@
 # Taskly Orbit
 
+Developer entry: [D23 developer handoff](docs/handoff/D23-developer-handoff.md) · [Figma Start Here](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=419-3). D23 remains TODO; full-product Figma approval must be recorded before frontend implementation.
+
 A brand-new, independent, bilingual task management product.
 
 Taskly Orbit is a reusable backend-agnostic UI/UX design system. The audited Supabase backend is an optional integration reference; implementation may use a new or another compatible backend. Design acceptance reviews editable Figma screens, responsive and bilingual/theme coverage, states and accessible alternatives. Backend authorization, RLS, constraints, API and status-policy compatibility, runtime behavior, security and persistence require separate validation against the chosen implementation. Full owner approval of Figma remains required before frontend development.
