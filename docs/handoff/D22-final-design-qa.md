@@ -1,6 +1,6 @@
 # D22 — Final Product Design QA
 
-**Status: REVIEW — bounded design QA PASS, pending explicit owner acceptance.** This is not full product approval or runtime accessibility certification.
+**Status: DONE — D22-v1 final DESIGN-ONLY QA baseline.** On 2026-11-10 the owner explicitly approved the bounded 19-surface risk-based visual QA, representative responsive checks, English LTR/Arabic RTL, Light/Dark, eight measured contrast pairs, native component/token checks, and focus and Reduced Motion samples. The owner accepted the P2 English Sign in alignment observation as optional future polish. This approval is not full WCAG certification, runtime accessibility validation, backend/security verification or full-product Figma approval. Full-product Figma approval must be explicitly recorded before frontend implementation; D23 remains TODO. Existing DEC/G/F holds and backend-agnostic principles remain in force.
 
 Figma file: [Taskly Orbit](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9). Rendered samples were inspected as listed below; no nodes were repaired. Existing D13–D21 acceptance evidence remains authoritative within its original scope.
 
@@ -34,7 +34,7 @@ Figma file: [Taskly Orbit](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9).
 - No before/after comparison exists; no edits were made. Exact inspected page IDs: 0:1, 1:2, 9:2, 14:2, 21:2, 26:2, 38:317, 53:2, 57:2, 74:2, 100:2, 129:2, 138:112, 165:1361, 171:2, 176:253, 181:232, 188:102, 192:175, 194:203, 199:1375, 203:99, 205:242, 209:132, 216:1444, 224:2, 232:19, 243:1381, 249:403, 257:2, 287:2, 302:2, 311:2, 316:437. These are inventory evidence, not visual QA.
 - Focus ring and warning text/icon are visible in rendered 312:49; reduced-motion drawer 313:193 and dialog 312:35 were rendered. Representative contrast measurements are recorded below. Runtime focus, keyboard, screen-reader and accessibility certification remain unverified. D21 pointer QA was reused and not repeated; no prototype mutations occurred.
 - DEC-05/06/07/08/11/12 remain unresolved; G-01–G-17 remain open, F-17–F-20 deferred, and Statistics conditional under G-17. Backend selection and implementation validation remain separate.
-- D23 remains TODO. Its handoff should follow completed D22 review and owner acceptance; preserve approved components, links, decisions and unresolved holds.
+- D23 remains TODO. Its handoff should follow this D22 acceptance; preserve approved components, links, decisions and unresolved holds.
 
 ## D22 continuation evidence
 
@@ -65,4 +65,4 @@ Native checks: 192:176 (EN desktop Light), 203:607 (EN tablet Light), 165:1362 (
 
 RTL form 194:538 has right-aligned Arabic labels and centered action labels; Create is to the right of Cancel in logical RTL order, and the surface fits its 390px root. The earlier rendered 320/360/390 validation samples show wrapping and padding; hidden collection content is excluded from containment conclusions. On 312:49, the focused field 312:57 lies at x=16, width 328 in a 360px frame; its ring is within the specimen with a 2px design gap and visible surrounding clearance. The Arabic drawer 313:193 uses right-aligned labels and original C icon instances, including the documented sign-out exception; the Latin brand lockup remains LTR. These are static native and rendered observations, not a runtime reading-order, keyboard or screen-reader test.
 
-No P0/P1 was identified in this bounded sample; no repairs or prototype destinations changed, so no retest was necessary. P2 English sign-in alignment remains optional polish. Existing D21 tested-versus-wired coverage and Reduced Motion limitations remain authoritative. D23 should preserve source links, conditional states and DEC/G/F holds, and organize the developer entry after owner review. The separate full Figma approval gate for frontend work remains in force.
+No P0/P1 was identified in this bounded sample; no repairs or prototype destinations changed, so no retest was necessary. P2 English sign-in alignment remains optional polish. Existing D21 tested-versus-wired coverage and Reduced Motion limitations remain authoritative. D23 should preserve source links, conditional states and DEC/G/F holds, and organize the developer entry in the separately authorized D23 task. The separate full Figma approval gate for frontend work remains in force.
