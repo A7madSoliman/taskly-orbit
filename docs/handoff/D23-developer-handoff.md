@@ -1,6 +1,6 @@
 # D23 — Developer handoff
 
-**D23 REVIEW pending explicit owner full-product Figma approval.** Full-product Figma approval must be explicitly recorded in `docs/handoff/` before frontend development. This guide does not release that gate. The product is a reusable bilingual, backend-agnostic task-management design; the audited Supabase contract is an optional integration reference, and a new or other compatible backend is allowed. Design acceptance does not verify backend behavior, authorization, security, persistence or runtime accessibility.
+**D23 DONE — full-product Figma approval recorded.** On 2026-11-10 the owner explicitly approved the complete Taskly Orbit Figma product design as the final DESIGN-ONLY baseline. Approval covers the D10/D11/D12 design system, D13–D19 screens and states, D20 Motion and Reduced Motion, D21 Interactive Prototypes, D22 Final Design QA and D23 Developer Handoff across desktop, tablet and mobile, English LTR and Arabic RTL, and Light and Dark themes. The Figma approval prerequisite for starting frontend development is satisfied; this closure does not start implementation. The product is a reusable bilingual, backend-agnostic task-management design; the audited Supabase contract is an optional integration reference, and a new or other compatible backend is allowed. Design acceptance does not verify backend behavior, authorization, security, persistence or runtime accessibility.
 
 Start with the editable [Figma developer landing 419:3](https://www.figma.com/design/o5x1eCbKM7xPx7SKB0hsI9?node-id=419-3), then this guide. The landing links to source pages; names containing REVIEW, TODO or IN PROGRESS are historical labels, not current status. See the [design backlog](../../.ai/tasks/DESIGN_BACKLOG.md) for current acceptance. Source links in this document identify the existing file; designs and prototype connections were not altered for B01.
 
@@ -55,7 +55,7 @@ The exact links below are representative editable entry compositions; each autho
 | Statuses | Last confirmed status, available eligible choices and explicit confirmation; pending/rejected/uncertain preserve confirmed state. | [D17](D17-tasks.md), OP-22 | DEC-07/G-08 transitions, defaults and legacy values; no invented graph or optimistic move. |
 | Statistics | Independently scoped calendar and project results, explicit filters, loading/empty/error and section retry, text alternatives. | [D18](D18-statistics.md), OP-27–28 | G-17 metric semantics and availability remain conditional; synthetic examples are not live data. |
 
-All DEC-05/06/07/08/11/12, G-01–G-17 and deferred F-17–F-20 remain visible requirements. Verify selected-backend RLS/authorization, constraints, compatibility, transition enforcement, security, runtime and persistence before integration or production claims.
+Approval does not confer runtime WCAG certification, prove backend authorization, guarantee API compatibility, or establish persistence or security. Do not invent status policies. Statistics remains conditional under G-17; the P2 English Sign in alignment remains optional polish. All DEC-05/06/07/08/11/12, G-01–G-17 and deferred F-17–F-20 remain visible requirements. Verify selected-backend RLS/authorization, constraints, compatibility, transition enforcement, security, runtime and persistence before integration or production claims.
 
 ## Figma dependency and cleanup inventory
 
@@ -75,12 +75,12 @@ B02 proposal: inspect inbound prototype reactions, component instances, links an
 
 ## Implementation checklist
 
-1. Obtain and record explicit owner full-product Figma approval before beginning frontend work.
+1. Owner full-product Figma approval was recorded on 2026-11-10; the design approval prerequisite is satisfied.
 2. Review the indexed screens, D05/D06 flows and D11/D12 variants; implement semantic tokens, bilingual layout and responsive behavior.
 3. Map each feature and state to the selected backend; resolve holds and validate authorization, API behavior and persistence separately.
 4. Implement keyboard, focus, screen-reader, non-drag and Reduced Motion alternatives; test actual contrast, zoom, devices and locale behavior.
 5. Validate actual navigation, overlay ownership, recovery, uncertainty and data outcomes; never treat Figma Preview as runtime proof.
-6. Keep D23 in REVIEW until the owner explicitly approves the full Figma product and that approval is recorded.
+6. Preserve unresolved implementation holds and validate the selected backend and runtime independently.
 
 ## B01 verification and limits
 
@@ -90,7 +90,7 @@ The landing uses editable Inter text and D10 color bindings. It is a developer-f
 
 ## B02 delivery review and cleanup decision
 
-**Bounded delivery review: PASS; D23 REVIEW pending owner full-product Figma approval.** No cleanup necessary: no node was demonstrated both free of required dependencies and authorized for archive or removal. Nothing was removed, archived, moved, renamed or edited in Figma in B02. Historical page labels such as TODO, REVIEW and IN_PROGRESS remain historical; the backlog is authoritative for current status. The rendered landing 419:3 was readable and its grouped foundations, screens, interaction and QA destinations were inspected.
+**Historical B02 bounded delivery review: PASS; owner full-product approval was pending at that time.** No cleanup necessary: no node was demonstrated both free of required dependencies and authorized for archive or removal. Nothing was removed, archived, moved, renamed or edited in Figma in B02. Historical page labels such as TODO, REVIEW and IN_PROGRESS remain historical; the backlog is authoritative for current status. The rendered landing 419:3 was readable and its grouped foundations, screens, interaction and QA destinations were inspected.
 
 The eight earlier wireframe pages remain **KEEP** as documented decision and state evidence in [D07](D07-wireframe-index.md): `1:2` shell; `9:2` authentication; `14:2` projects; `21:2` members; `26:2` epics; `38:317` tasks; `53:2` statistics; `57:2` display controls. Page `9:2` contains four local components and 107 instances; `14:2` contains six components and 99 instances. Cross-page dependency examples include `21:27` → `17:21`, `26:27` → `17:11`, `38:348` → `17:5`, `55:19` → `17:5` and `57:52` → `17:3`. These show old masters still support historical specimens, not that approved screens depend on them. No complete external-link or whole-file dependency proof was attempted; individual descendants remain **KEEP / INVESTIGATE** until a future candidate-specific audit. **SAFE TO ARCHIVE: none established. SAFE TO REMOVE: none established.** No exact-node cleanup authorization has been given.
 
